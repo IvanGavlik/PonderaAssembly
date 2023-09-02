@@ -1,0 +1,29 @@
+Plugin implelemtation in java using annotations.
+To state this in a different way, one allows 
+	plugins to access your application while
+	allows your application to access plugins
+	
+Use reflection to help in the plugin loading process.
+
+Use @Plugin annotation at class level to identify classes as plugin.
+Use @Start at metod level to declare plugin init method.
+Use @Dependency, @DependencyFactory, @DependencyInstance to declare and instantiate plugin dependencies at constructor level.
+Use @Extension and @ExtensionPoint to declare plugin extensions.
+User Microkernel.ACTION#emit and @HandleAction for event base communication between plugins.  
+
+Instead of having an application with a plug-in model, everything is a plug-in. The base application itself is the plug-in framework. 	
+
+Plugin – singleton that provides service, represent functional subsystem
+Extension point – place where other plugins can plug in (allows one plugin to enhance the functionality of the component it extends) 
+
+PonderaAssembly
+- annotaions
+- plugin discovery
+- extensions
+- hooks into process (@Start)
+- extensions run in separate process TODO
+- import plugins at compile time (not run time) jar lib (specific plugin)
+	- configuration file
+	- configured at deployment time (jar, manifest file at folder installation dir)
+- plugin managment kernel known as PonderaKernel 
+- plugin param to set up as idependept process (thread)
