@@ -1,6 +1,6 @@
 # Pondera Assembly 
 
-The "PonderaAssembly" bridges the gap in the plugin framework landscape, 
+The "PonderaAssembly" bridges the gap in the Java plugin framework landscape, 
 providing developers with a user-friendly, lightweight, and modern solution 
 for integrating plugins. 
 
