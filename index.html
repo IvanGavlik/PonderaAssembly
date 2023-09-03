@@ -1,1 +1,120 @@
-<h1> init </h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Pondera Assembly - Java pluing in play framework</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  padding: 1%;
+  text-align: left;
+  font-size: 2rem;
+  color: #666;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  padding: 2%;
+  color: #ccc;
+  border: 0.2rem solid #ccc;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 1%;
+  width: 70%;
+  background: #f1f1f1;
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+<header>
+  <p> <b> Pondera Assembly </b> <span> - Java pluing in play framework </span> </p> </p> 
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="why">Why</a></li>
+    <!--  <li><a href="how">How</a></li> -->
+    </ul>
+  </nav>
+  
+  <article>
+  <div>
+    <h1 id="why">Why</h1>
+The landscape of Java plugin frameworks currently presents limitations that hinder developers from achieving a seamless and lightweight integration of plugins into their applications. The available options—such as OSGI, the Java Simple Plugin Framework (JSPF), and the Java Plugin Framework (JPF)—each come with their own challenges and shortcomings:
+<ul>
+	<li> 
+	    <b> OSGI: </b> While OSGI is robust and capable, its complexity can be overwhelming for many developers. Implementing and configuring OSGI often requires a steep learning curve, making it unsuitable for projects seeking a lightweight and user-friendly solution.
+	</li>
+
+	<li>
+	    <b>JSPF: </b> JSPF, despite being initiated by Google, is marked as archived and has not seen active development since 2011. The lack of ongoing maintenance raises concerns about compatibility, security, and future support.
+	</li>
+
+	<li> 
+
+	    <b> JPF: </b> The Java Plugin Framework (JPF) is even older, with its last version published in 2007. Its age raises compatibility issues with modern Java versions and APIs, rendering it insufficient for contemporary plugin needs.
+</li>
+</ul>
+
+<b>Given the limitations of existing options, there is a clear gap in the market for a new plugin framework that prioritizes simplicity, lightweight integration, and modern compatibility. </b> Developers require a solution that empowers them to seamlessly incorporate plugins into their applications without the complexities associated with OSGI or the limitations of outdated frameworks like JSPF and JPF.
+  </div>
+  
+  
+   <div>
+   </div>
+   
+    
+  </article>
+  
+  
+</section>
+<!--
+<footer>
+  <p>Footer</p>
+</footer>
+-->
+</body>
+</html>
