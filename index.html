@@ -1,120 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Pondera Assembly - Java pluing in play framework</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-/* Style the header */
-header {
-  padding: 1%;
-  text-align: left;
-  font-size: 2rem;
-  color: #666;
-}
-
-/* Create two columns/boxes that floats next to each other */
-nav {
-  float: left;
-  width: 30%;
-  padding: 2%;
-  color: #ccc;
-  border: 0.2rem solid #ccc;
-}
-
-/* Style the list inside the menu */
-nav ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-article {
-  float: left;
-  padding: 1%;
-  width: 70%;
-  background: #f1f1f1;
-}
-
-/* Clear floats after the columns */
-section::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Style the footer */
-footer {
-  background-color: #777;
-  padding: 10px;
-  text-align: center;
-  color: white;
-}
-
-/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
-@media (max-width: 600px) {
-  nav, article {
-    width: 100%;
-    height: auto;
-  }
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PonderaAssembly - A Modern Java Plugin Framework</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header>
-  <p> <b> Pondera Assembly </b> <span> - Java pluing in play framework </span> </p> </p> 
-</header>
+    <header>
+        <h1>PonderaAssembly</h1>
+        <p>A Modern Java Plugin Framework</p>
+    </header>
+	
+<div style="float: left; width: 70%; height: 100%;">
 
-<section>
-  <nav>
-    <ul>
-      <li><a href="why">Why</a></li>
-    <!--  <li><a href="how">How</a></li> -->
-    </ul>
-  </nav>
-  
-  <article>
-  <div>
-    <h1 id="why">Why</h1>
-The landscape of Java plugin frameworks currently presents limitations that hinder developers from achieving a seamless and lightweight integration of plugins into their applications. The available options—such as OSGI, the Java Simple Plugin Framework (JSPF), and the Java Plugin Framework (JPF)—each come with their own challenges and shortcomings:
-<ul>
-	<li> 
-	    <b> OSGI: </b> While OSGI is robust and capable, its complexity can be overwhelming for many developers. Implementing and configuring OSGI often requires a steep learning curve, making it unsuitable for projects seeking a lightweight and user-friendly solution.
-	</li>
+    <section id="goal">
+        <h2>Goal</h2>
+        <p>The "PonderaAssembly" bridges the gap in the Java plugin framework landscape, providing developers with a user-friendly, lightweight, and modern solution for integrating plugins.</p>
+    </section>
 
-	<li>
-	    <b>JSPF: </b> JSPF, despite being initiated by Google, is marked as archived and has not seen active development since 2011. The lack of ongoing maintenance raises concerns about compatibility, security, and future support.
-	</li>
+    <section id="problem-description">
+        <h2>Problem Description</h2>
+        <p>The landscape of Java plugin frameworks currently presents limitations that hinder developers from achieving a seamless and lightweight integration of plugins into their applications. The available options—such as OSGI, the Java Simple Plugin Framework (JSPF), and the Java Plugin Framework (JPF)—each come with their own challenges and shortcomings. For more details, please refer to the <a target=”_blank”  href="https://github.com/IvanGavlik/PonderaAssembly/blob/master/ProblemDescription.odt">ProblemDescription document</a>.</p>
+    </section>
 
-	<li> 
+    <section id="technical-requirements">
+        <h2>Plugin Features</h2>
+        <ul>
+            <li>Annotation-Based Plugin Identification</li>
+            <li>Hook Annotations for Lifecycle Management</li>
+            <li>Compile-Time Plugin Import</li>
+            <li>Plugin as Singleton</li>
+            <li>Extension Points</li>
+            <li>Event-Based Communication Between Plugins</li>
+        </ul>
+        <p>For more information on the features, please refer to the 
+        	<a target=”_blank”  href="https://github.com/IvanGavlik/PonderaAssembly/blob/master/TechnicalRequirements.odt">TechnicalRequirements document</a>.
+        </p>
+    </section>
 
-	    <b> JPF: </b> The Java Plugin Framework (JPF) is even older, with its last version published in 2007. Its age raises compatibility issues with modern Java versions and APIs, rendering it insufficient for contemporary plugin needs.
-</li>
-</ul>
+    <section id="architecture">
+        <h2>Architecture</h2>
+        <p>PonderaAssembly consists of two main components:</p>
+        <ul>
+            <li>Plugin Declaration/Definition Module</li>
+            <li>Plugin Runtime Module and its Events Sub-Module</li>
+        </ul>
+        <p>For a deeper dive into the architecture decisions, please refer to the 
+        	<a target=”_blank”  href="https://github.com/IvanGavlik/PonderaAssembly/blob/master/ArchitectureDecisions.odt">ArchitectureDecisions document</a>.
+        	</p>
+    </section>
 
-<b>Given the limitations of existing options, there is a clear gap in the market for a new plugin framework that prioritizes simplicity, lightweight integration, and modern compatibility. </b> Developers require a solution that empowers them to seamlessly incorporate plugins into their applications without the complexities associated with OSGI or the limitations of outdated frameworks like JSPF and JPF.
-  </div>
-  
-  
-   <div>
-   </div>
-   
+    </div>
     
-  </article>
-  
-  
-</section>
-<!--
-<footer>
-  <p>Footer</p>
-</footer>
--->
+    <div style="float: right; width: 30%; height: 100%;">
+    <section id="nav">
+        <h2>Info</h2>
+        <p> <a target=”_blank” href="https://github.com/IvanGavlik/PonderaAssembly#problem-description"> Soruce code </a> </p>	
+	<p> Contact: ivangavlik963@gmail.com </p>	
+    </section>
+
+</div>
+	
+<div style="width: 100%; clear: both;" >	
+    <footer>
+        <p>&copy; 2023 PonderaAssembly. All rights reserved.</p>
+    </footer>
+    </div>
 </body>
 </html>
+
