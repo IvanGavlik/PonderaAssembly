@@ -9,3 +9,5 @@ for integrating plugins.
 * event communication - id, type, payload
 * can remove id from plugin annotation  
 * tests
+* maven https://www.freecodecamp.org/news/how-to-upload-an-open-source-java-library-to-maven-central-cac7ce2f57c/
+
