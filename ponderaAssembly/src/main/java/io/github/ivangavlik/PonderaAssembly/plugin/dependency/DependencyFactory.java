@@ -10,17 +10,17 @@ import java.lang.annotation.Target;
  * Classes marked with this annotation should define methods annotated with {@link DependencyInstance} to provide dependency instances.
  *
  * Example:
- * <pre> {@code
+ * <pre> <code>
  *
- * @DependencyFactory
+ * {@literal @}DependencyFactory
  * public class MyDependency {
- *     @DependencyInstance()
+ *     {@literal @}DependencyInstance()
  *     public String testIt() {
  *         return "Hello world";
  *     }
  * }
- * }
- *</pre>
+ *
+ * </code> </pre>
  */
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)

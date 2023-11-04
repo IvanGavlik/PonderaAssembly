@@ -20,19 +20,20 @@ import java.lang.annotation.Target;
  *  To emit action PonderaMicrokernel.EVENT#emit
  *
  * Example:
- * <pre> {@code
+ * <pre> <code>
  *
- * @Plugin(id= "com.ig.HttpRequestPlugin")
+ *
+ * {@literal @}Plugin(id= "com.ig.HttpRequestPlugin")
  * public class HttpRequestPlugin {
  *
  *     // this method acts as handler for PonderaMicrokernel.EVENT#emit
- *     @HandleAction()
+ *     {@literal @}HandleAction()
  *     public void handleSend(Object payload) {
  *
  *     }
  * }
- * }
- * </pre>
+ *
+ * </code> </pre>
  */
 @Target(ElementType.METHOD)
 @Retention(RetentionPolicy.RUNTIME)

@@ -19,26 +19,26 @@ import java.lang.annotation.Target;
  *  <li> Method must have no parameters.</li>
  * </ul>
  * Example:
- * <pre> {@code
+ * <pre> <code>
  *
- * @DependencyFactory
+ * {@literal @}@DependencyFactory
  * public class MyDependency {
- *     @DependencyInstance()
+ *     {@literal @}@DependencyInstance()
  *     public String testIt() {
  *         return "Hello world";
  *     }
  * }
  *
- * @Plugin(id = "com.test.HttpSendExtended")
+ * {@literal @}@Plugin(id = "com.test.HttpSendExtended")
  * public class HttpSendExtended {
  *
- *     public HttpSendExtended(@Dependency(name = "testIt") String test) {
+ *     public HttpSendExtended({@literal @}@Dependency(name = "testIt") String test) {
  *         System.out.println("HttpSendExtended constructor param " + test);
  *     }
  * }
- * }</pre>
+ * </code> </pre>
  *
- * Output: {@code HttpSendExtended constructor param Hello world }
+ * Output: { HttpSendExtended constructor param Hello world }
  *
  */
 @Target(ElementType.METHOD)
